@@ -424,7 +424,7 @@ export const getGoogleLoginPage = async (req, res) => {
 
   const cookieConfig = {
     httpOnly: true,
-    secure: true,
+     secure: process.env.NODE_ENV === "production",
     maxAge: OAUTH_EXCHANGE_EXPIRY,
     sameSite: "lax", // this is such that when google redirects to our website, cookies are maintained
   };
