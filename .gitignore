@@ -41,3 +41,6 @@ coverage/
 
 # Miscellaneous
 !.gitkeep
+
+.env
+isrgrootx1.pem
